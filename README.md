@@ -2,6 +2,8 @@
 JS- MusicPlayer
 
 Proje Görüntüsü - Project View
+
+
 <img src="music.gif"/>
 
 Bu projede indexten veri çekme, butonları kontrol etme ve yönetme gibi temel JS komutları yanı sıra zamana dayalı işlemler de gerçekleştirdik.
