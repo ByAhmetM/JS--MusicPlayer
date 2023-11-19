@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- our css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Mussssiiiccc Time</title>
+  </head>
+  <body>
+    <!-- müzik çalıcı -->
+    <div class="music-player">
+      <!-- oynatma listesi -->
+      <button id="playlist">
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+      <!-- şarkıcı resmi -->
+      <img src="" id="song-image" />
+      <!-- şarkı detayı -->
+      <div class="song-details">
+        <p id="song-name"></p>
+        <p id="song-artist"></p>
+      </div>
+      <!-- Oynatma seçenekleri -->
+      <div class="player-options">
+        <button id="shuffle"><i class="fa-solid fa-shuffle"></i></button>
+        <button id="prev"><i class="fa-solid fa-backward-step"></i></button>
+        <button id="play"><i class="fa-solid fa-play"></i></button>
+        <button id="pause" class="hide">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+        <button id="next"><i class="fa-solid fa-forward-step"></i></button>
+        <button id="repeat"><i class="fa-solid fa-repeat"></i></button>
+      </div>
+      <!-- ses -->
+      <audio src="" id="audio" preload="metadata"></audio>
+      <!-- progress bar -->
+      <div id="progress-bar">
+        <div id="current-progress"></div>
+      </div>
+      <!-- zaman -->
+      <div class="time-container">
+        <span id="current-time"></span>
+        <span id="max-duration"></span>
+      </div>
+
+      <!-- şarkı listesi -->
+      <div id="playlist-container">
+        <button id="close-button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul id="playlist-songs"></ul>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
